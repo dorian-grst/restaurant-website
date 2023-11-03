@@ -64,7 +64,7 @@ function Home() {
                     alt="food"
                 />
             </section>
-            <section className="menu relative -mx-9 flex h-auto flex-col items-center gap-12 pt-16 md:gap-16 md:pt-0 lg:py-12 xl:gap-48">
+            <section className="menu relative -mx-9 flex h-auto flex-col items-center gap-12 pt-16 md:gap-16 md:pt-0 lg:pt-12 xl:gap-48">
                 <div className="mx-auto flex items-center border-2 border-primary px-8 py-3">
                     <h3>CARTE</h3>
                 </div>
@@ -73,7 +73,7 @@ function Home() {
                     {' '}
                 </div>
             </section>
-            <section className="pt-12 md:pb-12 lg:pt-0">
+            <section className="md:pb-12 lg:pt-0">
                 <div className="flex flex-col justify-between gap-8 md:flex-col md:pl-32 md:pr-32 lg:pb-8 xl:flex-row xl:pt-16">
                     <div className="">
                         <img

@@ -165,25 +165,32 @@ const Menu = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="flex flex-col gap-6">
-                        <h5>MENU ET FORMULE</h5>
+                    <div className="flex h-full flex-col justify-between">
                         <div className="flex flex-col gap-6">
-                            <div className="flex flex-col gap-2">
-                                <h6>MENU À 25€</h6>
-                                <p>Entrée, plat et dessert</p>
+                            <div className="align-center flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                                <h5>MENU ET FORMULE</h5>
+                                <p className="lg:mt-[6px]">
+                                    (Seulement le midi)
+                                </p>
                             </div>
-                            <div className="flex flex-col gap-2">
-                                <h6>FORMULE À 18€</h6>
-                                <p>Entrée, plat</p>
-                                <p>ou</p>
-                                <p>Plat, dessert</p>
-                                <p>Café compris</p>
+                            <div className="flex flex-col gap-6">
+                                <div className="flex flex-col gap-2">
+                                    <h6>MENU DU JOUR À 25€</h6>
+                                    <p>Entrée, plat et dessert</p>
+                                </div>
+                                <div className="flex flex-col gap-2">
+                                    <h6>FORMULE À 18€</h6>
+                                    <p>Entrée, plat</p>
+                                    <p>ou</p>
+                                    <p>Plat, dessert</p>
+                                    <p>Café compris</p>
+                                </div>
                             </div>
                         </div>
                         <div>
                             <p>
-                                Les entrées plats et desserts changent tous les
-                                jours.
+                                *Les entrées, plats, et desserts changent tous
+                                les jours.
                             </p>
                         </div>
                     </div>
