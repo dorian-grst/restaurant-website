@@ -35,28 +35,28 @@
     }
 
     h1 {
-        @apply text-5xl;
+        @apply text-4xl;
         @apply md:text-7xl;
         font-family: 'Didot';
         font-weight: 400;
     }
 
     h2 {
-        @apply text-2xl;
+        @apply text-xl;
         @apply md:text-4xl;
         font-family: 'Didot';
         font-weight: 400;
     }
 
     h3 {
-        @apply text-xl;
+        @apply text-lg;
         @apply md:text-2xl;
         font-family: 'Neue Montreal';
         font-weight: 400;
     }
 
     h4 {
-        @apply text-lg;
+        @apply text-base;
         @apply md:text-2xl;
         font-family: 'Didot';
         font-weight: 400;

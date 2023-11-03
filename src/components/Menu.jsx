@@ -16,7 +16,7 @@ const tapas = [
         price: '3,50',
     },
     {
-        name: 'Croquettes de cbillaud pannées sauce tartare (10 pièces)',
+        name: 'Croquettes de cabillaud pannées sauce tartare (10 pièces)',
         price: '6,00',
     },
     {
@@ -111,7 +111,7 @@ const douceurs = [
         price: '4,00',
     },
     {
-        name: 'Gauffre au Nutella glace caramel beurre salé',
+        name: 'Gaufre au Nutella glace caramel beurre salé',
         price: '6,00',
     },
     {
@@ -130,10 +130,15 @@ const douceurs = [
 
 const Menu = () => {
     return (
-        <div className="static top-48 flex bg-white p-12 xl:absolute xl:rounded-3xl">
+        <div className="static flex bg-white p-12 xl:absolute xl:rounded-3xl">
             <div className="flex flex-col gap-12 md:flex-row">
                 <div className="flex flex-col gap-6">
-                    <h5 className="">TAPAS & PLANCHA</h5>
+                    <div className="align-center flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                        <h5>TAPAS & PLANCHA</h5>
+                        <p className="italic lg:mt-[6px]">
+                            (Seulement le soir)
+                        </p>
+                    </div>
                     <div className="flex flex-col gap-2">
                         {tapas.map((tapa) => (
                             <div
@@ -148,7 +153,12 @@ const Menu = () => {
                 </div>
                 <div className="flex flex-col gap-12">
                     <div className="flex flex-col gap-6">
-                        <h5 className="">DOUCEURS</h5>
+                        <div className="align-center flex flex-col lg:flex-row lg:items-center lg:gap-2">
+                            <h5>DOUCEURS</h5>
+                            <p className="italic lg:mt-[6px]">
+                                (Seulement le soir)
+                            </p>
+                        </div>
                         <div className="flex flex-col gap-2">
                             {douceurs.map((douceur) => (
                                 <div
@@ -165,11 +175,14 @@ const Menu = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="flex h-full flex-col justify-between">
+                    <div
+                        className="flex h-full flex-col gap-8 md:justify-between
+                    md:gap-0"
+                    >
                         <div className="flex flex-col gap-6">
-                            <div className="align-center flex flex-col lg:flex-row lg:items-center lg:gap-2">
-                                <h5>MENU ET FORMULE</h5>
-                                <p className="lg:mt-[6px]">
+                            <div className="align-center flex flex-col break-keep lg:flex-row lg:items-center lg:gap-2">
+                                <h5>MENU & FORMULES</h5>
+                                <p className="italic lg:mt-[6px]">
                                     (Seulement le midi)
                                 </p>
                             </div>
@@ -179,7 +192,7 @@ const Menu = () => {
                                     <p>Entrée, plat et dessert</p>
                                 </div>
                                 <div className="flex flex-col gap-2">
-                                    <h6>FORMULE À 18€</h6>
+                                    <h6>FORMULES À 19€</h6>
                                     <p>Entrée, plat</p>
                                     <p>ou</p>
                                     <p>Plat, dessert</p>
