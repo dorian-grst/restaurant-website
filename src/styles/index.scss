@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Neue Montreal';
+        src:
+            url('./../fonts/NeueMontreal-Regular.woff2') format('woff2'),
+            url('./../fonts/NeueMontreal-Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Didot';
+        src:
+            url('./../fonts/GFSDidot-Regular.woff2') format('woff2'),
+            url('./../fonts/GFSDidot-Regular.woff') format('woff');
+    }
+
+    @font-face {
+        font-family: 'Gallery Modern';
+        src:
+            url('./../fonts/GalleryModern-Regular.woff2') format('woff2'),
+            url('./../fonts/GalleryModern-Regular.woff') format('woff');
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        color: theme('colors.primary');
+    }
+
+    h1 {
+        @apply text-5xl;
+        @apply md:text-7xl;
+        font-family: 'Didot';
+        font-weight: 400;
+    }
+
+    h2 {
+        @apply text-2xl;
+        @apply md:text-4xl;
+        font-family: 'Didot';
+        font-weight: 400;
+    }
+
+    h3 {
+        @apply text-xl;
+        @apply md:text-2xl;
+        font-family: 'Neue Montreal';
+        font-weight: 400;
+    }
+
+    h4 {
+        @apply text-lg;
+        @apply md:text-2xl;
+        font-family: 'Didot';
+        font-weight: 400;
+    }
+
+    h5 {
+        @apply text-2xl;
+        @apply md:text-3xl;
+        font-family: 'Neue Montreal';
+        font-weight: 800;
+    }
+
+    h6 {
+        @apply text-lg;
+        @apply md:text-xl;
+        font-family: 'Neue Montreal';
+        font-weight: 800;
+    }
+
+    p {
+        font-family: 'Neue Montreal';
+        @apply text-sm;
+        @apply md:text-base;
+    }
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        background-color: theme('colors.secondary');
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    * {
+        @apply scroll-smooth;
+    }
+
+    section {
+    }
+
+    .cursor {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        background-color: rgb(255, 255, 255);
+    }
+}
