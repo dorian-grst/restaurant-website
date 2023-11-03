@@ -103,7 +103,7 @@ function Home() {
                             Venez déguster nos délices et profiter d&apos;un
                             cadre convivial.
                         </p>
-                        <div className="flex flex-col gap-4 md:flex-row md:gap-12 lg:flex-row lg:gap-16">
+                        <div className="flex flex-row gap-4 md:gap-12 lg:gap-16 justify-between lg:justify-normal">
                             <div>
                                 <a
                                     className="flex flex-row"
