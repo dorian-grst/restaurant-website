@@ -12,7 +12,7 @@ function App() {
     return (
         <div className="main">
             <div
-                className="cursor z-50 hidden lg:visible"
+                className="cursor z-3 hidden lg:block"
                 style={{
                     left: cursorX + 'px',
                     top: cursorY + 'px',

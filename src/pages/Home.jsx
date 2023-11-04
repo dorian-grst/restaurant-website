@@ -45,7 +45,7 @@ function Home() {
                             des soirées mémorables entre amis ou en amoureux
                         </h3>
                     </div>
-                    <div className="bounce hidden xl:visible xl:flex xl:h-full">
+                    <div className="bounce hidden xl:flex xl:h-full ">
                         <a href="#images" className="flex ">
                             <img
                                 className="w-16"
