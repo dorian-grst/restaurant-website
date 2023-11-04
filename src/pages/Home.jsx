@@ -82,12 +82,12 @@ function Home() {
                     className="menu -mx-9 flex flex-col items-center md:pt-0 xl:relative xl:gap-48"
                 >
                     <Menu />
-                    <div className=" xl:visible xl:mt-20 xl:h-[98vh] xl:w-full xl:bg-primary">
+                    <div className=" xl:mt-20 xl:h-[110vh] xl:w-full xl:bg-primary 2xl:h-[100vh]">
                         {' '}
                     </div>
                 </section>
                 <section className="">
-                    <div className="flex flex-col justify-between gap-8 md:flex-col lg:pb-8 xl:flex-row xl:pt-6">
+                    <div className="laptopl:gap-16 laptopl:justify-center flex flex-col gap-8 md:flex-col lg:pb-8 xl:flex-row xl:pt-6">
                         <div className="">
                             <img
                                 className="border-8 border-white"
